@@ -110,8 +110,6 @@
   OFFSET 5
   LIMIT 5;
 ```
-![1](https://github.com/aliereng/patika_sql/assets/16747340/03a20ef6-68e4-490c-ad78-22d8e3424e05) 
-![2](https://github.com/aliereng/patika_sql/assets/16747340/17755e63-c612-4bec-90e6-0368f2bdc550)
-![3](https://github.com/aliereng/patika_sql/assets/16747340/00bb4509-c5c6-4d21-a33f-2a7f53795073)
+![1](https://github.com/aliereng/patika_sql/assets/16747340/03a20ef6-68e4-490c-ad78-22d8e3424e05) ![2](https://github.com/aliereng/patika_sql/assets/16747340/17755e63-c612-4bec-90e6-0368f2bdc550)![3](https://github.com/aliereng/patika_sql/assets/16747340/00bb4509-c5c6-4d21-a33f-2a7f53795073)
 
 
