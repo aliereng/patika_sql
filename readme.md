@@ -1,4 +1,4 @@
-Sorguların uygulandığı [veritanı](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/) 
+Sorguların uygulandığı [veritabanı](https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/) 
 ## Ödev 1
 **film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.**
 ```sql
