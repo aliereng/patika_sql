@@ -87,8 +87,31 @@
   SELECT COUNT(*) FROM country
   WHERE country LIKE '_____';
 ```
-**fcity tablosundaki şehir isimlerinin kaç tanesi 'R' veya r karakteri ile biter?**
+**city tablosundaki şehir isimlerinin kaç tanesi 'R' veya r karakteri ile biter?**
 ```sql
   SELECT COUNT(*) from city
   WHERE city ILIKE '%r';
 ```
+## Ödev 5
+**film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en uzun (length) 5 filmi sıralayınız.**
+
+```sql
+  SELECT * FROM film
+  WHERE title LIKE '%n'
+  ORDER BY length DESC
+  LIMIT 5;
+```
+
+**film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en kısa (length) ikinci(6,7,8,9,10) 5 filmi(6,7,8,9,10) sıralayınız.**
+```sql
+  SELECT film_id, title, length FROM film
+  WHERE title LIKE '%n'
+  ORDER BY length ASC
+  OFFSET 5
+  LIMIT 5;
+```
+![1](https://github.com/aliereng/patika_sql/assets/16747340/03a20ef6-68e4-490c-ad78-22d8e3424e05) 
+![2](https://github.com/aliereng/patika_sql/assets/16747340/17755e63-c612-4bec-90e6-0368f2bdc550)
+![3](https://github.com/aliereng/patika_sql/assets/16747340/00bb4509-c5c6-4d21-a33f-2a7f53795073)
+
+
