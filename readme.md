@@ -111,6 +111,7 @@ Sorguların uygulandığı [veritabanı](https://www.postgresqltutorial.com/post
   LIMIT 5;
 ```
 offset ve limit bilgisi olmadan attığımız sorgunun sonucu ile offset ve limit bilgisi olarak attığımız sorgunun sonucunda length = 61 olan 4 adet verinin limit ve offset işleminden önceki sıralama ile gelmediği görülmüştür. Bunun sebebi limit bilgisi birer birer arttırldığında ortaya çıkmış olup 61 li grubun en son elemanının en başa sondan bir önceki elemanının 2. sıraya ilk elemanının da son sıraya yerleşmiş olduğu görülmüştür. Buradan yapılan çıkarım ise bit grup veri aynı değere sahip ve bir limitleme işlemi yapılacak ise  - burada aynı değer 61 ve limit işlemi 5 - bu 61 li grubun sıralamaya göre tam tersinin response olacağıdır.
+
 **customer tablosunda bulunan last_name sütununa göre azalan yapılan sıralamada store_id 1 olmak koşuluyla ilk 4 veriyi sıralayınız.**
 ```sql
   SELECT * FROM customer
