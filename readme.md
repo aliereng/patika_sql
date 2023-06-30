@@ -190,3 +190,35 @@ insert into employee (name, birthday, email) values ('Taite', '1963-06-04', 'tpi
 insert into employee (name, birthday, email) values ('Catlin', null, 'cwythill1d@samsung.com');
 ```
 
+**Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.**
+
+```sql
+UPDATE employee
+SET name = 'updated',
+    birthday = '1555-05-15',
+    email = 'updated@email.com
+WHERE id = 1;
+
+UPDATE employee
+SET name = 'updated1',
+    birthday = '1555-05-15',
+    email = 'updated1@email.com
+WHERE name LIKE '%a';
+
+UPDATE employee
+SET name = 'updated2',
+    birthday = '1555-05-15',
+    email = 'updated2@email.com
+WHERE email IS NULL;
+
+UPDATE employee
+SET name = 'updated3',
+    birthday = '1555-05-15',
+    email = 'updated3@email.com
+WHERE id > 30;
+
+UPDATE employee
+SET name = 'updated4',
+    birthday = '1555-05-15',
+    email = 'updated4@email.com
+WHERE name ILIKE '%__a%' AND email IS NOT NULL;
