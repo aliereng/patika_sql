@@ -171,3 +171,22 @@ offset ve limit bilgisi olmadan attığımız sorgunun sonucu ile offset ve limi
   ORDER BY COUNT(country_id) DESC
   FETCH FIRST 1 ROW ONLY;
 ```
+## Ödev 8
+**test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.**
+```sql
+  CREATE TABLE employee (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    birthday DATE DEFAULT CURRENT_DATE,
+    email VARCHAR(100);
+```
+
+**Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.**
+
+```sql
+insert into employee (name, birthday, email) values ('Maurits', '1994-02-27', 'mhartwell0@cdc.gov');
+insert into employee (name, birthday, email) values ('Taite', '1963-06-04', 'tpipkin1@ebay.com');
+...
+insert into employee (name, birthday, email) values ('Catlin', null, 'cwythill1d@samsung.com');
+```
+
