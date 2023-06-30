@@ -222,3 +222,4 @@ SET name = 'updated4',
     birthday = '1555-05-15',
     email = 'updated4@email.com
 WHERE name ILIKE '%__a%' AND email IS NOT NULL;
+```
