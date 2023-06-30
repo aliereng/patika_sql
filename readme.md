@@ -223,3 +223,20 @@ SET name = 'updated4',
     email = 'updated4@email.com
 WHERE name ILIKE '%__a%' AND email IS NOT NULL;
 ```
+**Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.**
+```sql
+DELETE FROM employee
+WHERE id = 1;
+
+DELETE FROM employee
+WHERE name LIKE '%a';
+
+DELETE FROM employee
+WHERE email IS NULL;
+
+DELETE FROM employee
+WHERE id > 30;
+
+DELETE FROM employee
+WHERE name ILIKE '%__a%' AND email IS NOT NULL;
+```
